@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   transition: all 0.1s ease-in;
+}
+/* Header Style */
+header{
+   position: relative;
+}
+.logo{
+    position: relative;
+    margin: 2rem;
+    width:90px;
+}
+.logoColor{
+    width: 2rem;
+    position: absolute;
+    top: 2.8rem;
+    left: 13.7rem;
+    z-index: -1;
+}
+/* Navabr style */
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.nav-container ul{
+    display: flex;
+     margin: 2rem;
+     list-style: none;
+    gap: 2rem;
+
+}
+.signUp{
+    border: solid 1px black;
+   width: 5rem;
+   height: 2rem;
+   text-align: center;
+   line-height: 2rem;
+}
+.langSelector{
+    border: none;
+    width: 50px;
+    height: 20px;
+    background-color: antiquewhite;
+}
+.langSelector:hover{
+    cursor: pointer;
+    background-color: azure;
+    transition: all 0.3s ease-in;
+}
+/* Right side images */
+.decorIMG{
+    position: absolute;
+    right: 0;
+    top: 0; 
+}
+.PlaneIMG{
+    position: absolute;
+    right: 40rem;
+
+}
+.zIndex-1{
+    z-index: 100;
+}
+/* banner style */
+.bnnerSection{
+    position: relative;
+    display: flex;
+    margin-top:4rem;
+    width: 100%;
+}
+.bannerInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+    gap: 3rem;
+   
+}
+.bannerInfo h6{
+    color: #DF6951;
+    font-size: 1rem;
+}
+.bannerInfo h1{
+    font-size: 3rem;
+    color: #181E4B;
+}
+.underline{
+    width: 18rem;
+    position: absolute;
+    top: 11.5rem;
+   left: 14rem;
+
+}
+.underline-text{
+    position: relative;
+}
+.bannerInfo p{
+    font-size: 0.9rem;
+}
+.bannerdemo{
+ flex-direction: row;
+ display: flex;
+ gap: 1rem;
+
+}
+.bannerBTN{
+    width: 10rem;
+    height: 4rem;
+    border: none;
+    background-color: #F1A501;
+    color: white;
+    border-radius: 5rem;
+   font-weight: bold;
+}
+.demoIMG{
+    position: relative;
+}
+.demoText{
+    position: absolute;
+    left: 22rem;
+    top: 31rem;
+   
+}
+.travelIMG{
+    position: absolute;
+    right: 5rem;
+    bottom: 0;
+    width: 70%;  
+}
+
+/* Main Content style */
+ .card2{
+    background-color: white;
+    border-radius: 2rem;
+ }
+
+
+/* classBased style */
+.textColer{
+    color: #5E6282;
+}
+.d-flex{
+    display: flex;
+}
+.f-dir-row{
+    flex-direction: row;
+}
+.f-dir-col{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+    
+}
+.justify-content-space{
+    justify-content: space-between;
+}
+.align-items-center{
+   align-items: center;
+}
+.gap1{
+    gap: 1rem;
+}
+.gap2{
+    gap: 2rem;
+}
+.gap3{
+    gap: 3rem;
+}
+.gap4{
+    gap: 4rem;
+}
+.gap5{
+    gap: 5rem;
+}
+.pos-abs{
+    position: absolute;
+}
+.right1{
+    right: 3rem;
+}
+.top1{
+    top: 2rem ;
+}
+.left2{
+    left: 3rem;
+}
+.bottom2{
+    bottom: 10rem;
+}
+.left3{
+ left:26rem;
+}
+.top3{
+   top: 70rem;
+}
+.zIndex-2{
+    z-index: -1;
+}
+.pos-rel{
+    position: relative;
+}
+.padding-2{
+    padding: 2rem;
+}
+.paddingL1{
+    padding-left: 2rem;
+}
+
+.margin-top1{
+    margin: 1rem;
+}
+
+
+
+
