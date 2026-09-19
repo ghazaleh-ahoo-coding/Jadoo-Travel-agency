@@ -1,137 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Jadoo Travel Agency</title>
 </head>
+
 <body>
- <header class="">
+    <header class="">
         <!--navbar-->
-        <nav class="nav-container" >
+        <nav class="nav-container">
             <!-- logo -->
-         <img src="/image/Jadoo.png" alt="jadoo logo" class="logo">
-         <img src="/image/Rectangle 24.png" alt="" class="logoColor">
-         <!-- navlist -->
-         <ul class="zIndex-1">
-            <li>Destnations</li>
-            <li>Hotels</li>
-            <li>Flights</li>
-            <li>Bookings</li>
-            <li>Login</li>
-            <li class="signUp"> SignUp</li>
-         </ul>
-         <div class="lang zIndex-1">
-            <select name="language" id="" class="langSelector">
-            <option value="En" selected>En</option>
-            <option value="Fa">Fa</option>
-         </select>
-         </div>
+            <img src="/image/Jadoo.png" alt="jadoo logo" class="logo">
+            <img src="/image/Rectangle 24.png" alt="" class="logoColor">
+            <!-- navlist -->
+            <ul class="zIndex-1">
+                <li> <a href="">Destnations</a></li>
+                <li> <a href="">Hotels</a></li>
+                <li> <a href="">Flights</a></li>
+                <li> <a href=""> Bookings</a></li>
+                <li> <a href=""> Login</a></li>
+                <li class="signUp"> <a href=""> SignUp</a> </li>
+            </ul>
+            <div class="lang zIndex-1">
+                <select name="language" id="" class="langSelector">
+                    <option value="En" selected>En</option>
+                    <option value="Fa">Fa</option>
+                </select>
+            </div>
         </nav>
         <div class="headerDecor">
-         <img src="/image/Decore.png" alt="" class="decorIMG">
-        <img src="/image/plane.png" alt="" class="PlaneIMG">
+            <img src="/image/Decore.png" alt="" class="decorIMG">
+            <img src="/image/plane.png" alt="" class="PlaneIMG">
         </div>
 
 
-<!-- banner -->
- <section class="bnnerSection">
-    <div class="bannerInfo">
-        <h6>
-            Best Destinations around the world
-        </h6>
-        <h1>
-            Travel, <span class="underline-text zIndex-1"> enjoy </span> <br>
-            and live a new <br>
-            and full life
-        </h1>
-        <p>Built Wicket longer admire do barton vanity itself do in it. <br> 
-            Preferred to sportsmen it engrossed listening. Park gate <br>
-             sell they west hard for the.</p>
-        <img src="/image/underline.png" alt="" class="underline">
-    
-    <div class="bannerdemo">
-        <button class="bannerBTN"> Find Out more</button>  
-            <img src="/image/Play button.png" alt="" class="demoIMG">
-            <p class="demoText">play Demo</p>
-            <div class="travelIMG">
-                 <img src="/image/Traveller 1.png" alt="" class="travelIMG">
+        <!-- banner -->
+        <section class="bnnerSection">
+            <div class="bannerInfo">
+                <h6>
+                    Best Destinations around the world
+                </h6>
+                <h1>
+                    Travel, <span class="underline-text zIndex-1"> enjoy </span> <br>
+                    and live a new <br>
+                    and full life
+                </h1>
+                <p>Built Wicket longer admire do barton vanity itself do in it. <br>
+                    Preferred to sportsmen it engrossed listening. Park gate <br>
+                    sell they west hard for the.</p>
+                <img src="/image/underline.png" alt="" class="underline">
+
+                <div class="bannerdemo">
+                    <button class="bannerBTN"> Find Out more</button>
+                    <img src="/image/Play button.png" alt="" class="demoIMG">
+                    <p class="demoText">play Demo</p>
+                    <div class="travelIMG">
+                        <img src="/image/Traveller 1.png" alt="" class="travelIMG">
+                    </div>
+
+                </div>
             </div>
-       
+        </section>
+    </header>
+    <!-- main Content -->
+    <main>
+        <!-- category section -->
+        <section class="category  d-flex f-dir-col align-items-center gap3 w-100">
+            <h4 class="text-color2">CATEGORY</h4>
+            <h1 class="text-color1"> We Offer Best Services</h1>
+            <div
+                class=" card-container d-flex f-dir-row justify-content-center align-items-center  gap5 w-80 text-center">
+                <!-- card1 -->
+                <div class=" card1 pos-rel box-shadow-1 border-radius2 w-20 padding1">
+
+                    <div class="padding-2">
+                        <img src="/image/satellite-dish.png" alt="" class=" ">
+                        <img src="/image/card rect.png" alt="" class="pos-abs right1 top1 zIndex-2 ">
+                    </div>
+                    <div class="margin1">
+                        <h3>Calculated Weather</h3>
+                        <p class="margin-top1">Built Wicket longer <br>
+                            admire do barton <br>
+                            vanity itself do in it.</p>
+                    </div>
+                </div>
+                <!-- card2 -->
+                <div class="card2 background-color  pos-rel zIndex-1 box-shadow-1 border-radius2 w-20 padding1">
+
+                    <div class="">
+                        <img src="/image/plane.png" alt="" class="card-icon">
+                        <img src="/image/card rect.png" alt="" class="pos-abs right1 top1 zIndex-2 ">
+                    </div>
+                    <div class="margin1">
+                        <h3 class="">Best Flight</h3>
+                        <p class="margin-top1">
+                            Engrossed listening. <br>
+                            Park gate sell they <br>
+                            west hard for the.
+                        </p>
+                    </div>
+                </div>
+                <!-- card3 -->
+                <div class="card3 pos-rel box-shadow-1 border-radius2 w-20 padding1">
+
+                    <div class="padding-2">
+                        <img src="/image/microphone.png" alt="" class=" ">
+                        <img src="/image/card rect.png" alt="" class="pos-abs bottom2 left2 zIndex-2 ">
+                    </div>
+                    <div class="margin1">
+                        <h3>Calculated Weather</h3>
+                        <p class="margin-top1">Built Wicket longer <br>
+                            admire do barton <br>
+                            vanity itself do in it.</p>
+                    </div>
+                </div>
+                <!-- card4 -->
+                <div class="card4 pos-rel box-shadow-1 border-radius2 w-20 padding1">
+
+                    <div class="padding-2">
+                        <img src="/image/spanner.png" alt="" class=" ">
+                        <img src="/image/card rect.png" alt="" class="pos-abs bottom2 left2 zIndex-2 ">
+                    </div>
+                    <div class="margin1">
+                        <h3>Calculated Weather</h3>
+                        <p class="margin-top1">Built Wicket longer <br>
+                            admire do barton <br>
+                            vanity itself do in it.</p>
+                    </div>
+                </div>
+
+            </div>
+            <img src="/image/under Card.png" alt="" class=" width3 height4 pos-abs top3 left3">
+        </section>
+        <!-- Top selling -->
+        <section
+            class="topSelling padding-2 d-flex f-dir-col align-items-center justify-content-center margin-auto w-80">
+            <h4 class="text-color2 padding-2">Top selling</h4>
+            <h1 class="text-color1 padding-1">Top Destinations</h1>
+            <div class=" card-container d-flex f-dir-row align-items-center justify-content-center margin-2 gap3 w-100">
+                <div class="card1 box-shadow-1 background-color border-radius2  f-1">
+                    <img src="/image/rome.webp" alt=""
+                        class="d-block border-radius2 w-100 aspect-ratio1 object-fit-cover">
+                    <p class=" margin-1"> Rome, Italy </p>
+
+                    <p class="margin-1"> <span> <img src="/image/navigation 1.png" alt=""> 10 Days Trip</span></p>
+                    <p class="margin-1">$5,42k</p>
+                </div>
+                <div class="card2 box-shadow-1 background-color border-radius2  f-1">
+                    <img src="/image/london.jpg" alt=""
+                        class="d-block border-radius2 w-100 aspect-ratio1 object-fit-cover">
+                    <p class=" margin-1"> Rome, Italy </p>
+
+                    <p class="margin-1"> <span> <img src="/image/navigation 1.png" alt=""></span>10 Days Trip </p>
+                    <p class="margin-1">$5,42k</p>
+                </div>
+                <div class="card3 box-shadow-1 background-color border-radius2  f-1">
+                    <img src="/image/Europ.webp" alt=""
+                        class="d-block border-radius2 w-100 aspect-ratio1 object-fit-cover">
+                    <p class=" margin-1"> Rome, Italy </p>
+
+                    <p class="margin-1"> <span> <img src="/image/navigation 1.png" alt=""></span> 10 Days Trip</p>
+                    <p class="margin-1">$5,42k</p>
+                </div>
+            </div>
+        </section>
+        <!-- Easy and fast section -->
+        <section class="trip-section d-flex justify-content-space f-dir-row gap6 margin-0 margin-top1 padding-6">
+
+            <div class="first-part ">
+
+                <div class="heading-area margin-bottom ">
+                    <h5 class="text-color2">Easy and fast</h5>
+
+                    <h1 class="text-color1">
+                        Book Your Next Trip <br>
+                        In 3 Easy Steps
+                    </h1>
+                </div>
+                <div class="steps ">
+
+                    <div class="step d-flex f-dir-row gap1">
+
+                
+                        <div class="icon">
+                            <img src="/image/icon1.png" alt="Choose destination icon" class="">
+                        </div> 
+
+                        <div class="step-content text-color1">
+                            <h5>Choose Destination</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur <br>
+                                adipiscing elit. Urna, tortor tempus.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="step d-flex f-dir-row gap1">
+
+                        <div class="icon">
+                            <img src="/image/icon2.png" alt="Choose destination icon" class="">
+                        </div>
+
+                        <div class="step-content text-color1">
+                            <h5>Make Payment</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur <br>
+                                adipiscing elit. Urna, tortor tempus.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="step d-flex f-dir-row gap1" >
+
+                        <div class="icon">
+                            <img src="/image/icon3.png" alt="Choose destination icon" class="">
+                        </div>
+
+                        <div class="step-content text-color1 ">
+                            <h5>Reach Airport on Selected Date</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur <br>
+                                adipiscing elit. Urna, tortor tempus.
+                            </p>
+                        </div>
+
+                    </div>
+                   
+                </div>
+            </div>
+            <!-- second box -->
+            <div class="second-part pos-rel padding-right">
+<!-- box1 -->
+                <div class="box1 border-radius2 background-color pos-rel box-shadow-2">
+                    <div class="trip-image">
+                        <img src="/image/box image.png" alt="Trip to Greece" class="w-95">
+                    </div>
+                    <div class="trip-info margin-top1">
+                        <h3 class="margin-top1">Trip To Greece</h3>
+
+                        <p class="margin-top1">
+                            14-29 June | by Robbin
+                        </p>
+                   </div>
+                   <div class="trip-icons margin-1 ">
+
+                        <img src="/image/LEAF.png" alt="Nature" class="padding-1">
+                        <img src="/image/map icon.png" alt="Map" class="padding-1 ">
+                        <img src="/image/send.png" alt="Send" class="padding-1">
+
+                    </div>
+                    <div class="people-going d-flex align-items-center justify-content-space gap1 margin-1 ">
+                        <p class="people-count">
+                            <img src="image/building 1.png" alt="People going">
+                            <span>24 People going</span>
+                        </p>
+                        <button class="favoriteBTN" type="button" aria-label="Add trip to favorites">&#9825;</button>
+                    </div>
+                </div>
+<!-- Box 2 -->
+                <div class="box2 border-radius2 background-color pos-abs  top-left4 box-shadow-1 w-70 h-1 padding-1 ">
+                    <div class="box2-content d-flex f-dir-row align-items-center gap1 ">
+                        <img src="/image/box2.png" alt="Rome trip image" class="boxIMG">
+                        <div class="d-flex f-dir-col ">
+                             <p class="ongoing-label">Ongoing</p>
+                        <h4 class="rome-trip-label">Trip to Rome</h4>
+                        </div>
+                       
+                    </div>
+                   <p class="progressCount margin-0 padding-1">
+                        <span class="purple-color">40%</span> completed
+                   </p>
+                    <progress max="100" value="40" class="progressBar purple-color"></progress>
+                </div>
+
+            
+            </div>
+
+
+        </section>
+<!-- Testemonial -->
+ <section class="Testimonials padding-2 d-flex f-dir-row gap3 justify-content-space  ">
+    <div class="rightSide margin-1">
+        <h5 class=" margin-1 text-color2">Testimonials</h5>
+        <h1 class="padding-1 text-color1">What People Say <br>
+            About Us.</h1>
+            <div class="dots padding-1">
+            <span class="font-size1">&#9679;</span>
+            <span class="font-size1">&cir;</span>
+            <span class="font-size1">&cir;</span>
+            </div>
+            
     </div>
+    
+    <div class="secondBox"> 
+         <img src="/image/comment.png" alt="User Profile" class="pos-abs zIndex-1 top1">
+        <div class="pos-rel background-color border-radius2">
+            <p class="font-size">“On the Windows talking painted pasture yet its <br>
+                 express parties use. Sure last upon he same as <br>
+                 knew next. Of believed or diverted no.”</p>
+                 <h3>
+                    Mike taylor
+                 </h3>
+                 <h4>Lahore, Pakistan</h4>
+                 <div>
+                    <p>“On the Windows talking painted pasture yet its <br>
+                 express parties use. Sure last upon he same as <br>
+                 knew next. Of believed or diverted no.”</p>
+                 <h3>
+                    Chris Thomas
+                 </h3>
+                 <h4>CEO of Red Button</h4>
+                 </div>
+        </div>
     </div>
  </section>
-    </header>
- <!-- main Content -->
-  <main>
-    <!-- category section -->
-    <section class="category  d-flex f-dir-col align-items-center gap3">
-        <h5 class="textColor">CATEGORY</h5>
-      <h1> We Offer Best Services</h1>
-      <div class=" d-flex f-dir-row justify-content-center align-items-center  gap5">
-        <!-- card1 -->
-        <div class=" pos-rel">
-        
-            <div class="padding-2">
-                <img src="/image/satellite-dish.png" alt="" class=" ">
-                <img src="/image/card rect.png" alt="" class="pos-abs right1 top1 zIndex-2 ">
-            </div>
-            <div class="margin1">
-                <h3>Calculated Weather</h3>
-                <p class="margin-top1">Built Wicket longer <br>
-                 admire do barton <br>
-                 vanity itself do in it.</p>
-            </div>
-            </div>
-            <!-- card2 -->
-        <div class="card2  pos-rel zIndex-1">
-        
-            <div class="">
-                <img src="/image/plane.png" alt="" class="card-icon">
-                <img src="/image/card rect.png" alt="" class="pos-abs right1 top1 zIndex-2 ">
-            </div>
-            <div class="margin1">
-                <h3 class="paddingL1">Best Flight</h3>
-                <p class="margin-top1">
-                    Engrossed listening. <br>
-                    Park gate sell they <br>
-                     west hard for the.
-                </p>
-            </div>
-            </div>
-            <!-- card3 -->
-        <div class="card pos-rel">
-        
-            <div class="padding-2">
-                <img src="/image/microphone.png" alt="" class=" ">
-                <img src="/image/card rect.png" alt="" class="pos-abs bottom2 left2 zIndex-2 ">
-            </div>
-            <div class="margin1">
-                <h3>Calculated Weather</h3>
-                <p class="margin-top1">Built Wicket longer <br>
-                 admire do barton <br>
-                 vanity itself do in it.</p>
-            </div>
-            </div>
-            <!-- card4 -->
-        <div class="card pos-rel">
-        
-            <div class="padding-2">
-                <img src="/image/spanner.png" alt="" class=" ">
-                <img src="/image/card rect.png" alt="" class="pos-abs bottom2 left2 zIndex-2 ">
-            </div>
-            <div class="margin1">
-                <h3>Calculated Weather</h3>
-                <p class="margin-top1">Built Wicket longer <br>
-                 admire do barton <br>
-                 vanity itself do in it.</p>
-            </div>
-      </div>
-    
-      </div>
-        <img src="/image/under Card.png" alt="" class=" width3 height4 pos-abs top3 left3">
-    </section>
-  </main>
+
+    </main>
 </body>
+
 </html>
