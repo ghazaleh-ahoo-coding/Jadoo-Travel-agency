@@ -159,15 +159,35 @@ header{
     width: 50px;
     height: 50px;
     border-radius: 5rem;
-    display: inline-block;
+    
+}
+.subscribtion{
+    background: url(/image/back.png) center no-repeat;
+    text-align: center;
+    border-radius: 10rem;
+}
+.subscribtion p{
+    font-size: 2rem;
+    opacity: 0.5;
+}
+.subscribtion input{
+    width: 20rem;
+    height: 3rem;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin-top: 3rem;
+   
 }
 
 /* classBased style */
 .background-color{
     background-color: rgb(255, 252, 252);
 }
+
 .text-color1{
     color: #181E4B;
+    
 }
 .text-color2{
     color: #5E6282;
@@ -180,11 +200,19 @@ header{
     font-size: 1.5rem;
 }
 .font-size2{
-    font-size: 1rem;
+    font-size: 1rem
+}
+.font-size3{
+    font-size:12px;
+}
+.font-size4{
+    font-size: 3rem;
+    font-weight: bold;
 }
 .text-center{
     text-align: center;
 }
+
 .d-inline-block{
     display: inline;
 }
@@ -243,6 +271,11 @@ header{
 .w-100{
     width: 100%;
 }
+.w-h-round{
+    width: 50px;
+    height: 50px;
+    border-radius: 5rem;
+}
 .w-80{
     width: 80%;
 }
@@ -257,6 +290,10 @@ header{
 }
 .w-70{
     width: 70%;
+}
+.w-fit{
+    width: fit-content;
+    max-width: 100%;
 }
 .h-1{
     height: 8.95rem;
@@ -287,8 +324,24 @@ header{
     top: 8rem;
     left: 13rem;
 }
+.top-right5{
+    top:-1rem;
+    right: 27rem;  
+}
+.top-bottom6{
+    top: 3rem;
+    left: 4rem;
+    z-index: 1;
+    width: 500px;
+}
+.left7{
+    right: 5rem;
+}
 .zIndex-2{
     z-index: -1;
+}
+.z-index-3{
+    z-index: -100;
 }
 .pos-rel{
     position: relative;
@@ -343,4 +396,8 @@ header{
 }
 .box-shadow-2{
     box-shadow: 6px -6px 12px 4px rgba(11, 93, 235, 0.3);
+}
+
+.border{
+    border: 1px solid rgba(0, 0, 0, 0.048);
 }
