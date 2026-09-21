@@ -66,6 +66,16 @@ header{
    text-align: center;
    line-height: 2rem;
 }
+.signUp button{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
 .langSelector{
     border: none;
     width: 50px;
@@ -74,7 +84,7 @@ header{
 }
 .langSelector:hover{
     cursor: pointer;
-    background-color: azure;
+    background-color: #181E4B;
     transition: all 0.3s ease-in;
 }
 
@@ -209,10 +219,18 @@ header{
     justify-content: center;
     gap: 1rem;
 }
+.email-field{
+    position: relative;
+}
 .email-icon{
     display: flex;
     align-items: center;
     pointer-events: none;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 .email-icon img{
     width: 1rem;
@@ -453,6 +471,20 @@ header{
     box-shadow: 6px -6px 12px 4px rgba(11, 93, 235, 0.3);
 }
 
+
+.box1:hover,
+.box2:hover,
+.testemonialCard:hover,
+.underBox:hover{
+    transform: translateX(1rem);
+}
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover:hover{
+     transform: translatey(1rem);
+}
+
 .border{
     border: 1px solid rgba(0, 0, 0, 0.048);
 }
@@ -567,7 +599,7 @@ header{
     .headerDecor{
         display: none;
     }
-    .mobileMenue{
+    .mobileMenu{
         position: relative;
         z-index: 1000;
         display: flex;
@@ -575,7 +607,7 @@ header{
         justify-content: space-between;
         padding: 0.75rem 1rem;
     }
-    .mobileMenue .logo{
+    .mobileMenu .logo{
         width: 20%;
         margin: 0;
         padding: 1rem;
@@ -592,7 +624,7 @@ header{
     .menuBTN img{
         width: 2rem;
     }
-    .mobileMenue nav{
+    .mobileMenu nav{
         position: fixed !important;
         z-index: 1001;
         inset: 0 0 0 auto;
@@ -606,21 +638,30 @@ header{
         max-width: calc(100vw - 4rem);
         height: 100vh;
         padding: 1.5rem;
-        background: rgba(255, 243, 214, 0.94);
+        background:#df6951ad;
         box-shadow: -0.5rem 0 2rem rgba(24, 30, 75, 0.18);
         transform: translateX(100%);
         visibility: hidden;
         pointer-events: none;
         transition: transform 0.25s ease-in;
     }
-    .mobileMenue nav:target{
+    .mobileMenu nav:target{
         transform: translateX(0);
         visibility: visible;
         pointer-events: auto;
     }
-    .mobileMenue .lang{
+    .mobileMenu .lang{
         display: block;
+        ;
     }
+    .mobileMenu .langSelector{
+        background-color: #F1A501;
+        border-radius: 0.5rem;
+    }
+   .mobileMenu .langSelector:hover {
+    background-color: #181E4B;
+    color: white;
+}
     .closeMenu{
         align-self: flex-end;
         width: 2.25rem;
@@ -631,24 +672,34 @@ header{
     .closeMenu img{
         width: 1.5rem;
     }
-    .mobileMenue ul{
+    .mobileMenu ul{
         display: flex;
         flex-direction: column;
         align-items: stretch;
         gap: 1.25rem;
         list-style: none;
     }
-    .mobileMenue li a{
+    .mobileMenu li a{
         color: black;
         display: block;
         font-size: 1rem;
         text-decoration: none;
     }
-    .mobileMenue .signUp{
-        width: auto;
-        height: auto;
-        border: 0;
+    .mobileMenu li a:hover{
+        cursor: pointer;
+        color: #F1A501;
+        transform: translateX(0.25rem);
+    }
+    .mobileMenu .signUp{
+        width: 40%;
+        height: 2rem;
+        border: none !important;
+        border-radius: 1rem;
         line-height: normal;
+        background-color: #F1A501;
+    }
+    .mobileMenu .signUp button{
+        height: 2rem;
     }
     .bnnerSection{
         min-height: 30rem;
@@ -753,11 +804,15 @@ header{
     .trip-section,
     .Testimonials,
     .infoContainer{
-        flex-direction: column;
-        align-items: stretch;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         gap: 2rem;
         padding: 2rem 1rem;
         margin: 0;
+    }
+    .Testimonials{
+        padding-bottom: 0;
     }
     .first-part,
     .second-part,
@@ -779,22 +834,65 @@ header{
         width: 100%;
     }
     .testemonialCard{
-        padding: 1.25rem;
+        padding: 1rem;
     }
+    .userProfile{
+        top: -1rem;
+        right: 1rem;
+    }
+    .secondBox{
+        width: 60%;
+    }
+    .underBox{
+        position: relative;
+        top: -10rem;
+        left: auto;
+        display: block;
+        margin-top: 1.5rem;
+        margin-bottom: -10rem;
+        padding: 1rem;
+    }
+    .arrow{
+       display: none;
+    }
+    
     .Testimonials .font-size4{
         font-size: 2rem;
     }
-    .infoContainer{
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .logo-container{
+        width: 100%;
     }
-    .infoContainer .name-container,
-    .infoContainer > .logo{
-        grid-column: 1 / -1;
-    }
-    .infoContainer .logo{
-        width: auto;
+    .logo-container > div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
         margin: 0;
+    }
+    .infoContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .infoContainer .name-container{
+        width: 100%;
+        text-align: center;
+    }
+    .infoContainer > .company,
+    .infoContainer > .contact,
+    .infoContainer > .more{
+        width: calc(33.333% - 1rem);
+    }
+    .infoContainer > .logo{
+        width: 100%;
+        margin: 0;
+        padding: 2rem;
     }
     .subscribtion{
         border-radius: 2rem;
@@ -802,32 +900,49 @@ header{
         margin: 0 1rem;
     }
     .subscribtion p{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     .email-area{
-        flex-wrap: wrap;
-        gap: 0.75rem;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+    .email-field{
+        width: 20rem;
+        flex-shrink: 0;
     }
     .subscribtion input{
-        width: min(100%, 20rem);
+        width: 100%;
+        height: 3rem;
     }
-    .email-icon,
+    .email-area .bannerBTN{
+        width: 7rem;
+        height: 3rem;
+        font-size: 0.8rem;
+        flex-shrink: 0;
+    }
     .sendIcon{
-        display: none;
+        display: block;
+        width: 2rem;
+        right: 1rem;
+        top: -1rem;
+    }
+    .email-icon{
+        left: 1.70rem;
     }
 }
 
 @media (max-width: 480px){
-    .mobileMenue{
+    .mobileMenu{
         align-items: flex-start;
     }
     .nav-desktop{
         display: none;
     }
-    .mobileMenue nav{
+    .mobileMenu nav{
         max-width: 75%;
     }
-    .mobileMenue ul{
+    .mobileMenu ul{
         justify-content: flex-end;
     }
     .bannerBTN{
