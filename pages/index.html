@@ -4,21 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pages/Styles/style.css">
-    <link rel="stylesheet" href="/assents/assets/image/favicon.png">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="icon" type="image/png" href="../assets/image/favicon.png?v=2">
     <title>Jadoo Travel Agency</title>
 </head>
 
 <body>
     <header class="">
+        <!-- Desktop Navbar -->
         <!--navbar-->
-        <nav class="nav-container">
+        <nav class="nav-container nav-desktop">
             <!-- logo -->
-            <img src="/assets/image/Jadoo.png" alt="jadoo logo" class="logo">
-            <img src="/assets/image/Rectangle 24.png" alt="" class="logoColor">
+            <div class="logo-wrap">
+                <img src="../assets/image/Jadoo.png" alt="jadoo logo" class="logo">
+                <img src="../assets/image/Rectangle 24.png" alt="" class="logoColor">
+            </div>
             <!-- navlist -->
             <ul class="zIndex-1">
-                <li> <a href="">Destnations</a></li>
+                <li> <a href="">Destinations</a></li>
                 <li> <a href="">Hotels</a></li>
                 <li> <a href="">Flights</a></li>
                 <li> <a href=""> Bookings</a></li>
@@ -33,17 +36,23 @@
             </div>
         </nav>
         <div class="headerDecor">
-            <img src="/assets/image/Decore.png" alt="" class="decorIMG">
-            <img src="/assets/image/plane.png" alt="" class="PlaneIMG">
+            <img src="../assets/image/Decore.png" alt="" class="decorIMG">
+            <img src="../assets/image/plane.png" alt="" class="PlaneIMG">
         </div>
  <!-- Responsive navbar -->
 
-  <section class="mobileMenue display-desktop-none">
-    <a href=""> <img src="/assets/image/menue.png" alt=""></a>
-    <nav>
-        <img src="/assets/image/Jadoo.png" alt="jadoo logo" class="logo">
+  <section class="mobileMenue display-mobile-none">
+    <img src="../assets/image/Jadoo.png" alt="jadoo logo" class="logo">
+        <a href="#mobileNav" class="menuBTN" aria-label="Open menu">
+                <img src="../assets/image/menue.png" alt="">
+        </a>
+        <nav id="mobileNav" aria-label="Mobile navigation">
+            <a href="#" class="closeMenu" aria-label="Close menu">
+                <img src="../assets/image/exit menue.png" alt="">
+            </a>
+        
          <ul class="">
-                <li> <a href="">Destnations</a></li>
+                <li> <a href="">Destinations</a></li>
                 <li> <a href="">Hotels</a></li>
                 <li> <a href="">Flights</a></li>
                 <li> <a href=""> Bookings</a></li>
@@ -66,21 +75,20 @@
                     Best Destinations around the world
                 </h6>
                 <h1>
-                    Travel, <span class="underline-text zIndex-1"> enjoy </span> <br>
+                    Travel, <span class="underline-text zIndex-1">enjoy<img src="../assets/image/underline.png" alt="" class="underline"></span> <br>
                     and live a new <br>
                     and full life
                 </h1>
                 <p>Built Wicket longer admire do barton vanity itself do in it. <br>
                     Preferred to sportsmen it engrossed listening. Park gate <br>
                     sell they west hard for the.</p>
-                <img src="/assets/image/underline.png" alt="" class="underline">
 
                 <div class="bannerdemo">
                     <button class="bannerBTN"> Find Out more</button>
-                    <img src="/assets/image/Play button.png" alt="" class="demoIMG">
+                    <img src="../assets/image/Play button.png" alt="" class="demoIMG">
                     <p class="demoText">play Demo</p>
                     <div class="travelIMG">
-                        <img src="/assets/image/Traveller 1.png" alt="" class="travelIMG">
+                        <img src="../assets/image/Traveller 1.png" alt="" class="travelIMG">
                     </div>
 
                 </div>
@@ -99,8 +107,8 @@
                 <div class=" card1 pos-rel box-shadow-1 border-radius2 w-20 padding1">
 
                     <div class="padding-2">
-                        <img src="/assets/image/satellite-dish.png" alt="" class=" ">
-                        <img src="/assets/image/card rect.png" alt="" class="pos-abs right1 top1 zIndex-2 ">
+                        <img src="../assets/image/satellite-dish.png" alt="" class=" ">
+                        <img src="../assets/image/card rect.png" alt="" class="pos-abs right1 top1 zIndex-2 ">
                     </div>
                     <div class="margin1">
                         <h3>Calculated Weather</h3>
@@ -113,8 +121,8 @@
                 <div class="card2 background-color  pos-rel zIndex-1 box-shadow-1 border-radius2 w-20 padding1">
 
                     <div class="">
-                        <img src="/assets/image/plane.png" alt="" class="card-icon">
-                        <img src="/assets/image/card rect.png" alt="" class="pos-abs right1 top1 zIndex-2 ">
+                        <img src="../assets/image/plane.png" alt="" class="card-icon">
+                        <img src="../assets/image/card rect.png" alt="" class="pos-abs right1 top1 zIndex-2 ">
                     </div>
                     <div class="margin1">
                         <h3 class="">Best Flight</h3>
@@ -129,8 +137,8 @@
                 <div class="card3 pos-rel box-shadow-1 border-radius2 w-20 padding1">
 
                     <div class="padding-2">
-                        <img src="/assets/image/microphone.png" alt="" class=" ">
-                        <img src="/assets/image/card rect.png" alt="" class="pos-abs bottom2 left2 zIndex-2 ">
+                        <img src="../assets/image/microphone.png" alt="" class=" ">
+                        <img src="../assets/image/card rect.png" alt="" class="pos-abs bottom2 left2 zIndex-2 ">
                     </div>
                     <div class="margin1">
                         <h3>Calculated Weather</h3>
@@ -143,8 +151,8 @@
                 <div class="card4 pos-rel box-shadow-1 border-radius2 w-20 padding1">
 
                     <div class="padding-2">
-                        <img src="/assets/image/spanner.png" alt="" class=" ">
-                        <img src="/assets/image/card rect.png" alt="" class="pos-abs bottom2 left2 zIndex-2 ">
+                        <img src="../assets/image/spanner.png" alt="" class=" ">
+                        <img src="../assets/image/card rect.png" alt="" class="pos-abs bottom2 left2 zIndex-2 ">
                     </div>
                     <div class="margin1">
                         <h3>Calculated Weather</h3>
@@ -155,7 +163,7 @@
                 </div>
 
             </div>
-            <img src="/assets/image/under Card.png" alt="" class=" width3 height4 pos-abs top3 left3">
+            <img src="../assets/image/under Card.png" alt="" class=" width3 height4 pos-abs top3 left3">
         </section>
         <!-- Top selling -->
         <section
@@ -164,27 +172,27 @@
             <h1 class="text-color1 padding-1">Top Destinations</h1>
             <div class=" card-container d-flex f-dir-row align-items-center justify-content-center margin-2 gap3 w-100">
                 <div class="card1 box-shadow-1 background-color border-radius2  f-1">
-                    <img src="/assets/image/rome.webp" alt=""
+                    <img src="../assets/image/rome.webp" alt="Rome, Italy"
                         class="d-block border-radius2 w-100 aspect-ratio1 object-fit-cover">
                     <p class=" margin-1"> Rome, Italy </p>
 
-                    <p class="margin-1"> <span> <img src="/assets/image/navigation 1.png" alt=""> 10 Days Trip</span></p>
+                    <p class="margin-1"> <span> <img src="../assets/image/navigation 1.png" alt=""> 10 Days Trip</span></p>
                     <p class="margin-1">$5,42k</p>
                 </div>
                 <div class="card2 box-shadow-1 background-color border-radius2  f-1">
-                    <img src="/assets/image/london.jpg" alt=""
+                    <img src="../assets/image/london.jpg" alt="London, United Kingdom"
                         class="d-block border-radius2 w-100 aspect-ratio1 object-fit-cover">
                     <p class=" margin-1"> Rome, Italy </p>
 
-                    <p class="margin-1"> <span> <img src="/assets/image/navigation 1.png" alt=""></span>10 Days Trip </p>
+                    <p class="margin-1"> <span> <img src="../assets/image/navigation 1.png" alt=""></span>10 Days Trip </p>
                     <p class="margin-1">$5,42k</p>
                 </div>
                 <div class="card3 box-shadow-1 background-color border-radius2  f-1">
-                    <img src="/assets/image/Europ.webp" alt=""
+                    <img src="../assets/image/Europ.webp" alt="Europe destination"
                         class="d-block border-radius2 w-100 aspect-ratio1 object-fit-cover">
                     <p class=" margin-1"> Rome, Italy </p>
 
-                    <p class="margin-1"> <span> <img src="/assets/image/navigation 1.png" alt=""></span> 10 Days Trip</p>
+                    <p class="margin-1"> <span> <img src="../assets/image/navigation 1.png" alt=""></span> 10 Days Trip</p>
                     <p class="margin-1">$5,42k</p>
                 </div>
             </div>
@@ -208,7 +216,7 @@
 
                 
                         <div class="icon">
-                            <img src="/assets/image/icon1.png" alt="Choose destination icon" class="">
+                            <img src="../assets/image/icon1.png" alt="Choose destination icon" class="">
                         </div> 
 
                         <div class="step-content text-color1">
@@ -223,7 +231,7 @@
                     <div class="step d-flex f-dir-row gap1">
 
                         <div class="icon">
-                            <img src="/assets/image/icon2.png" alt="Choose destination icon" class="">
+                            <img src="../assets/image/icon2.png" alt="Payment icon" class="">
                         </div>
 
                         <div class="step-content text-color1">
@@ -238,7 +246,7 @@
                     <div class="step d-flex f-dir-row gap1" >
 
                         <div class="icon">
-                            <img src="/assets/image/icon3.png" alt="Choose destination icon" class="">
+                            <img src="../assets/image/icon3.png" alt="Airport icon" class="">
                         </div>
 
                         <div class="step-content text-color1 ">
@@ -257,8 +265,8 @@
             <div class="second-part pos-rel padding-right">
 <!-- box1 -->
                 <div class="box1 border-radius2 background-color pos-rel box-shadow-2">
-                    <div class="trip/assets/image/>
-                        <img src="/assets/image/box/assets/image/png" alt="Trip to Greece" class="w-95">
+                    <div class="trip-image">
+                        <img src="../assets/image/box image.png" alt="Trip to Greece" class="w-95">
                     </div>
                     <div class="trip-info margin-top1">
                         <h3 class="margin-top1">Trip To Greece</h3>
@@ -269,14 +277,14 @@
                    </div>
                    <div class="trip-icons margin-1 ">
 
-                        <img src="/assets/image/LEAF.png" alt="Nature" class="padding-1">
-                        <img src="/assets/image/map icon.png" alt="Map" class="padding-1 ">
-                        <img src="/assets/image/send.png" alt="Send" class="padding-1">
+                        <img src="../assets/image/LEAF.png" alt="Nature" class="padding-1">
+                        <img src="../assets/image/map icon.png" alt="Map" class="padding-1 ">
+                        <img src="../assets/image/send.png" alt="Send" class="padding-1">
 
                     </div>
                     <div class="people-going d-flex align-items-center justify-content-space gap1 margin-1 ">
                         <p class="people-count">
-                            <img src=/assets/image/building 1.png" alt="People going">
+                            <img src="../assets/image/building 1.png" alt="People going">
                             <span>24 People going</span>
                         </p>
                         <button class="favoriteBTN" type="button" aria-label="Add trip to favorites">&#9825;</button>
@@ -285,7 +293,7 @@
 <!-- Box 2 -->
                 <div class="box2 border-radius2 background-color pos-abs  top-left4 box-shadow-1 w-70 h-1 padding-1 ">
                     <div class="box2-content d-flex f-dir-row align-items-center gap1 ">
-                        <img src="/assets/image/box2.png" alt="Rome trip/assets/image/ class="d-inline-block w-h-round">
+                        <img src="../assets/image/box2.png" alt="Rome trip image" class="d-inline-block w-h-round">
                         <div class="d-flex f-dir-col ">
                              <p class="ongoing-label">Ongoing</p>
                         <h4 class="rome-trip-label">Trip to Rome</h4>
@@ -319,7 +327,7 @@
     
     <div class="secondBox f-1 pos-rel zIndex-1 ">
         <div class="testemonialCard w-fit pos-rel background-color border-radius2 box-shadow-1 padding-2 zIndex-1">
-            <img src="/assets/image/comment.png" alt="User Profile" class="w-h-round pos-abs top-right5 zIndex-1">
+            <img src="../assets/image/comment.png" alt="User Profile" class="w-h-round pos-abs top-right5 zIndex-1">
             <p class="text-color2 padding-right">“On the Windows talking painted pasture yet its <br>
                  express parties use. Sure last upon he same as <br>
                  knew next. Of believed or diverted no.”</p>
@@ -339,30 +347,30 @@
                  </div>
     </div>
     <div class="arrow d-flex f-dir-col gap4 margin-0 padding-1">
-        <span><img src="/assets/image/Vector 2.png" alt=""></span>
-        <span><img src="/assets/image/Vector 3.png" alt=""></span>
+        <span><img src="../assets/image/Vector 2.png" alt=""></span>
+        <span><img src="../assets/image/Vector 3.png" alt=""></span>
     </div>
  </section>
 <!--Logo Section -->
 <section>
    <div class="d-flex f-dir-row align-items-center justify-content-space padding-6 ">
-     <img src="/assets/image/logo1.png" alt="">
-    <img src="/assets/image/logo2.png" alt="">
-    <img src="/assets/image/logo3.png" alt="">
-    <img src="/assets/image/logo4.png" alt="">
-    <img src="/assets/image/logo5.png" alt="">
+     <img src="../assets/image/logo1.png" alt="">
+    <img src="../assets/image/logo2.png" alt="">
+    <img src="../assets/image/logo3.png" alt="">
+    <img src="../assets/image/logo4.png" alt="">
+    <img src="../assets/image/logo5.png" alt="">
    </div>
 </section>
 <!-- Subscribe -->
  <section class="subscribtion pos-rel">
-    <img src="/assets/image/send Icon.png" alt="" class="sendIcon pos-abs right-top8">
+    <img src="../assets/image/send Icon.png" alt="" class="sendIcon pos-abs right-top8">
     <div>
         <p class="">Subscribe to get information, latest news and other <br>
 interesting offers about Jadoo</p>
     </div>
     <div class="email-area pos-rel padding-2">
     <span class="pos-abs left7 email-icon">
-        <img src="/assets/image/email.png" alt="">
+        <img src="../assets/image/email.png" alt="">
     </span>
 
     <input type="text" placeholder="Your email">
@@ -404,15 +412,15 @@ Control for much longer.
     </div>
     <div class="logo d-flex f-dir-col gap2">
         <div class="d-flex f-dir-row justify-content-center ">
-            <img src="/assets/image/facebook.png" alt="">
-            <img src="/assets/image/Social.png" alt="">
-            <img src="/assets/image/Social (1).png" alt="">
+            <img src="../assets/image/facebook.png" alt="">
+            <img src="../assets/image/Social.png" alt="">
+            <img src="../assets/image/Social (1).png" alt="">
         </div>
         <div class="d-flex f-dir-col align-items-center gap2">
             <h4>Discover our app</h4>
             <div class="d-flex f-dir-row gap1">
-          <img src="/assets/image/Play Store.png" alt="">
-            <img src="/assets/image/Google Play.png" alt=""></div>
+          <img src="../assets/image/Play Store.png" alt="">
+            <img src="../assets/image/Google Play.png" alt=""></div>
           
         </div>
     </div>
