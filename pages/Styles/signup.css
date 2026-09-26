@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: #181E4B;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+   
+}
+.title{
+    background-color: #181E4B;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: start;
+    align-items:flex-start;
+    color: white;
+    padding: 10rem;
+}
+.title h1{
+    font-size: 2rem;
+    width: 30vw;
+    line-height: 1.2;
+    
+}
+.travelerIMG{
+    width: 30vw;
+    position: absolute;
+    left:20rem;
+    top: 50%;
+    z-index: 100;
+
+}
+.form-container{
+    background: linear-gradient(to right, #181E4B, #DF6951);
+   
+    position: relative;
+
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 80vh;
+    padding: 2rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.form-group input{
+padding: auto;
+ width:35vw;
+ height: 5vh;
+ background-color: #181E4B;
+ border: none;
+ border-radius: 15rem;
+}
+div, h2 , h3, p{
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+label{
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 1rem;
+   
+}
+input::placeholder{
+   color: rgba(248, 248, 249, 0.68);
+   padding: 1rem;
+}
+.btnContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+}
+.linkSignin{
+    color: aliceblue;
+}
+.text .title{
+    color: aliceblue;
+    font-size: 2rem;
+}
+.submitBTN{
+    border: none;
+    border-radius: 2rem;
+    background-color: #DF6951;
+    color: aliceblue;
+    width: 15vw;
+    height: 30vh;
+    padding: 1.5rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.submitBTN1{
+    border: none;
+    border-radius: 2rem;
+    background-color: #DF6951;
+    color: aliceblue;
+    width: 10vw;
+    height: 5vh;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+div , a{
+   color: #181E4B;
+   font-size: 1rem;
+   text-decoration: none;
+}
+.raio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12rem; 
+    font-size: 1rem;
+}
+.remmember{
+ display: flex;
+ flex-direction: row;
+}
+@media (max-width:740px){
+
+    main{
+     flex-direction: column;
+       width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    }
+    .travelerIMG{
+        top: 3rem;
+        left: 28rem;
+        width: 30vw;
+    }
+    .title{
+        width: 100%;
+        height: auto;
+        padding: 2rem 1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-container{
+        background: linear-gradient(to bottom, #181E4B, #DF6951);
+        height: auto;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title h1{
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+    .form-container form{
+       padding: 0;
+       margin: 0;
+       
+    }
+    .submitBTN{
+        height: 20%;
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        background-color: #181E4B;
+
+    }
+    .raio{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
