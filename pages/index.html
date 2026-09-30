@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="icon" type="image/png" href="../assets/image/favicon.png?v=2">
     <title>Jadoo Travel Agency</title>
+     <script src="/pages/page.js"defer></script>
 </head>
 
 <body>
@@ -86,8 +87,10 @@
 
                 <div class="bannerdemo">
                     <button class="bannerBTN"> Find Out more</button>
-                    <img src="../assets/image/Play button.png" alt="" class="demoIMG">
-                    <p class="demoText">play Demo</p>
+                    <button onclick="changeMood()" class="moodBTN">
+                         <img src="/assets/image/mood.png" alt="" class="moodPNG">
+                    </button>
+                   
                     <div class="travelIMG">
                         <img src="../assets/image/Traveller 1.png" alt="" class="travelIMG">
                     </div>
@@ -291,7 +294,7 @@
                             <img src="../assets/image/building 1.png" alt="People going">
                             <span>24 People going</span>
                         </p>
-                        <button class="favoriteBTN" type="button" aria-label="Add trip to favorites">&#9825;</button>
+                        <button id="heart" class="favoriteBTN" type="button" aria-label="Add trip to favorites">&#9825;</button>
                     </div>
                 </div>
                 <!-- Box 2 -->
@@ -388,7 +391,7 @@
         <section class="infoContainer  w-95  margin-2 d-flex f-dir-row justify-content-space align-items-center">
             <div class="name-container padding-1">
                 <h2 class="margin-1 font-size4">Jadoo.</h2>
-                <p class="text-color2">Book your trip in minute, get full <br>
+                <p class="text-color1">Book your trip in minute, get full <br>
                     Control for much longer.
                 </p>
             </div>
@@ -417,7 +420,7 @@
                     <li>Low fare tips</li>
                 </ul>
             </div>
-            <div class="logo d-flex f-dir-col gap2">
+            <div class="logo d-flex f-dir-col gap2 " id="mediaLogo">
                 <div class="d-flex f-dir-row justify-content-center ">
                     <img src="../assets/image/facebook.png" alt="">
                     <img src="../assets/image/Social.png" alt="">
@@ -438,6 +441,7 @@
     <footer class="padding-2 text-center margin-2">
         <p>All rights reserved 2026</p>
     </footer>
+ 
 </body>
 
 </html>
