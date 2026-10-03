@@ -121,6 +121,18 @@ input::placeholder{
     font-weight: bolder;
     font-size: 1rem;
 }
+.clearBTN{
+    margin: 10px;
+     border: none;
+    border-radius: 2rem;
+    background-color: #DF6951;
+    color: aliceblue;
+    width: 200px;
+    height: 150vh;
+    padding: 1.5rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
 div , a{
    color: #181E4B;
    font-size: 1rem;

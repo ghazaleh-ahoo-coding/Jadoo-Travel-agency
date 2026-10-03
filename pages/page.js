@@ -5,5 +5,14 @@ let heartFill = document.getElementById("heart");
 heartFill.addEventListener("click",() => {
     heartFill.innerHTML="&#9829;";
 });
-console.log(heartFill);
+
+function message(){
+    alert("You succufully loged in Welcome!")
+}
+
+
+function clearForm(){
+    input.value="";
+}
+
 
