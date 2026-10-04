@@ -7,12 +7,15 @@ heartFill.addEventListener("click",() => {
 });
 
 function message(){
-    alert("You succufully loged in Welcome!")
+    const userName = document.getElementById("Name").value;
+
+    alert(`${userName} succufully loged in Welcome!` );
 }
 
 
 function clearForm(){
-    input.value="";
+    document.querySelectorAll("form input").forEach((input) => {
+        input.value = "";
+    });
 }
-
 
